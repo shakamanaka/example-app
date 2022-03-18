@@ -24,4 +24,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::controller(ExampleController::class)->prefix('example')->group(function (){
     Route::get('/hello-world','index');
+    Route::post('/message','message');
 });
